@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body class="page_order page">
+    <header>
+        <div>
+            <a href="index.html">
+                <img src="img/logo-black.png" alt="Logo GeniArtHub version sombre">
+            </a>
+            <a id="btn_panier" href="#"><img src="img/cart.svg" alt="Aller au panier"></a>
+        </div>
+    </header>
+    <main>
+        <section id="panier_row">
+            <h1 class="title">Votre panier</h1>
+            <div class="panier">
+                <div class="trait"></div>
+                <div class="div_commande">
+                    <h3 class="title3">Total de la commande</h3>
+                    <p class="para_total"></p>
+                </div>
+        </section>
+        <section id="commande">
+            <h2 class="title">Formulaire de commande</h2>
+            <article>
+                <div class="trait"></div>
+                <form id="form" action="order.js" method="post">
+                    <div class="form_input">
+                        <label for="firstName">Prénom :</label>
+                        <input type="text" name="firstName" id="firstName" required>
+                    </div>
+                    <div class="form_input">
+                        <label for="name">Nom :</label>
+                        <input type="text" name="name" id="name"required>
+                    </div>
+                    <div class="form_input">
+                        <label for="adress">Adresse :</label>
+                        <input type="text" name="adress" id="adress" required>
+                    </div>
+                    <div class="form_input">
+                        <label for="city">Ville :</label>
+                        <input type="text" name="city" id="city" required>
+                    </div>
+                    <div class="form_input">
+                        <label for="email">Email :</label>
+                        <input type="mail" name="email" id="email" required>
+                    </div>
+                    <input type="submit" id="submit">
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p><a href="https://www.errantecreation.com/">Errante Creation</a> © 2023 - GeniArtHub</p>
+    </footer>
+    <script src="js/order.js"></script>
+</body>
+</html>
